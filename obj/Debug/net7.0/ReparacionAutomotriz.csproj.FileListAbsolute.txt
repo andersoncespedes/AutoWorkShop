@@ -1,0 +1,15 @@
+/home/arteN01-043/Documents/ReparacionAutomotriz/bin/Debug/net7.0/ReparacionAutomotriz
+/home/arteN01-043/Documents/ReparacionAutomotriz/bin/Debug/net7.0/ReparacionAutomotriz.deps.json
+/home/arteN01-043/Documents/ReparacionAutomotriz/bin/Debug/net7.0/ReparacionAutomotriz.runtimeconfig.json
+/home/arteN01-043/Documents/ReparacionAutomotriz/bin/Debug/net7.0/ReparacionAutomotriz.dll
+/home/arteN01-043/Documents/ReparacionAutomotriz/bin/Debug/net7.0/ReparacionAutomotriz.pdb
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.csproj.AssemblyReference.cache
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.AssemblyInfoInputs.cache
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.AssemblyInfo.cs
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.csproj.CoreCompileInputs.cache
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.dll
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/refint/ReparacionAutomotriz.dll
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.pdb
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ReparacionAutomotriz.genruntimeconfig.cache
+/home/arteN01-043/Documents/ReparacionAutomotriz/obj/Debug/net7.0/ref/ReparacionAutomotriz.dll
