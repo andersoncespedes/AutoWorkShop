@@ -7,7 +7,7 @@ namespace ReparacionAutomotriz.Clases;
 public abstract class Persona
 {
     private int Cc ;
-    private string? Nombre;
+    private string Nombre;
     private int Telefono;
     public int cc { 
         get{
@@ -17,7 +17,7 @@ public abstract class Persona
             if(value.ToString().Length > 5){
                 this.Cc = value;
             }else{
-                  throw new ArgumentOutOfRangeException(" asd");
+                  throw new ArgumentOutOfRangeException("asd");
             }
         } 
      }

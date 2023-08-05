@@ -7,11 +7,11 @@ namespace ReparacionAutomotriz.Clases;
 
 public class Vehiculos
 {
-    private string? Placa;
-    private string? Modelo;
-    private string? Marca;
-    private string? Color;
-    private string? Km;
+    private string Placa;
+    private string Modelo;
+    private string Marca;
+    private string Color;
+    private string Km;
     private int IdCliente;
     public int idCliente {get => IdCliente; set => this.IdCliente = value;}
     public string placa {
@@ -58,12 +58,13 @@ public class Vehiculos
     public Vehiculos(){
 
     }
-    public Vehiculos(string placa, string modelo, string marca, string color, string km){
+    public Vehiculos(string placa, string modelo, string marca, string color, string km, int idCliente){
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
         this.color = color;
         this.km = km;
+        this.idCliente = idCliente;
     }
     public void Crear(List<Vehiculos> listaVehiculo, List<Clientes> listaCliente)
     {
@@ -86,13 +87,19 @@ public class Vehiculos
             Console.Write("Cedula del cliente-> ");
             int cedula = int.Parse( Console.ReadLine());
             if(!clientes1.Validar(listaCliente, cedula)) throw new Exception("Error, no se ha encontrado la cedula en la base de datos");
-            Vehiculos clientes= new(placa, modelo, marca, color, km);
+            Vehiculos clientes= new(placa, modelo, marca, color, km, cedula);
             listaVehiculo.Add(clientes);
         }catch(Exception err){
             Console.WriteLine("Has Ingresado un dato invalido");
             Console.WriteLine(err.Message);
             Console.Write("Presiona enter para continuar -> ");
             Console.ReadLine();
+        }
+    }
+    public void CarrosById(int id, List<Vehiculos> lista){
+        List<Vehiculos> vehiculos= lista.Where(x => x.idCliente == id).ToList();
+        foreach(Vehiculos vehiculo in vehiculos){
+            Console.WriteLine($"{vehiculo.placa}\t{vehiculo.modelo}\t{vehiculo.color}\t{vehiculo.km}");
         }
     }
 }

@@ -4,6 +4,8 @@ public class Programa{
     public static void Main(string[] args){
         List<Clientes> clientesLista = new();
         List<Vehiculos> vehiculosLista = new();
+        List<Empleados> empleadosLista = new();
+
         int opcion = 0;
         MainMenu mainMenu = new();
         do{
@@ -27,9 +29,26 @@ public class Programa{
                                 Vehiculos vehiculos = new();
                                 vehiculos.Crear(vehiculosLista, clientesLista);
                                 break;
+                            case 3:
+                                Empleados empleados = new();
+                                empleados.Crear(empleadosLista);
+                                break;
                         }
                     }while(opcionRegistro != 4);
                 break;
+                case 2:
+                    int opcionOrden = 0;
+                    MenuOrden menuOrden = new();
+                    do{
+                        opcionOrden = menuOrden.Menu();
+                        switch(opcionOrden){
+                            case 1:
+                                OrdenDeServicio ordenDeServicio = new();
+                                ordenDeServicio.GenerarOrden(clientesLista, vehiculosLista, empleadosLista);
+                                break;
+                        }
+                    }while(opcionOrden != 3);
+                    break;
             }
         }while(opcion!= 4);
     }

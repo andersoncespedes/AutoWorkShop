@@ -11,7 +11,7 @@ public class MainMenu
         Console.Clear();
         Console.WriteLine("\tMenu");
         Console.WriteLine("1.Registro panel");
-        Console.WriteLine("2.Orden de Servicios");
+        Console.WriteLine("2.Servicios");
         Console.WriteLine("3.Salir");
         Console.Write("Digite una opcion -> ");
         return int.Parse(Console.ReadLine());

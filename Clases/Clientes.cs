@@ -11,7 +11,7 @@ public class Clientes : Persona
     
     //Control de Atributos
     
-    public string? apellido 
+    public string apellido 
     { 
         get{
             return this.Apellido;
@@ -73,12 +73,12 @@ public class Clientes : Persona
         }
     }
     public void Mostrar(List<Clientes> lista){
-        Console.WriteLine("\tNombre\tApellido\tTelefono\tEmail\tFecha");
+        Console.WriteLine("Cc\tNombre\tApellido\tTelefono\tEmail\tFecha");
         foreach(Clientes cliente in lista){
-            Console.WriteLine($"\t{cliente.nombre}\t{cliente.apellido}\t{cliente.telefono}\t{cliente.email}\t{cliente.fechaRegistro}");
+            Console.WriteLine($"{cliente.cc}\t{cliente.nombre}\t{cliente.apellido}\t{cliente.telefono}\t{cliente.email}\t{cliente.fechaRegistro}");
         }
     }
-     public bool Validar(List<Clientes> lista, int valor){
+    public bool Validar(List<Clientes> lista, int valor){
         return lista.Exists(e => e.cc == valor);
     }
 }
