@@ -25,7 +25,7 @@ public class OrdenDeServicio
     public OrdenDeServicio(){
 
     }
-    public void GenerarOrden(List<Clientes> listaCliente, List<Vehiculos> listaVehiculos, List<Empleados> listaEmpleados, List<OrdenDeServicio> litaOrden)
+    public void GenerarOrden(List<Clientes> listaCliente, List<Vehiculos> listaVehiculos, List<Empleados> listaEmpleados, List<OrdenDeServicio> listaOrden)
     {
         try
         {
@@ -61,6 +61,8 @@ public class OrdenDeServicio
             string diagnosticoE = diagnosticoExperto();
 
             OrdenDeServicio nuevaOrden = new(idCliente, placa, diagnosticoC, diagnosticoE, idsEmpleados, LiderId);
+            listaOrden.Add(nuevaOrden);
+            GenerarVistaOrden(nuevaOrden);
         }catch(Exception err){
             Console.WriteLine(err.Message);
         }
@@ -75,7 +77,12 @@ public class OrdenDeServicio
         Console.Write("-> ");
         return Console.ReadLine();
     }
-    public void GenerarVistaOrden(){
+    public void GenerarVistaOrden(OrdenDeServicio orden){
+        Console.WriteLine("============================================");
+        Console.WriteLine("\tDATOS DE LA ORDEN");
+        Console.WriteLine("=============================================");
+        Console.WriteLine("Nro Orden: 1          Fecha: ");
+        Console.WriteLine("Id Cliente: 1         Nombre Cliente: ");
 
     }
 }
