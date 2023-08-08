@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/skylab-149/.nuget/packages/": {}
+    "C:\\Users\\Anderson Cespedes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/skylab-149/Desktop/AutoWorkShop/ReparacionAutomotriz.csproj",
+      "projectUniqueName": "C:\\Users\\Anderson Cespedes\\Documents\\AutoWorkShop\\ReparacionAutomotriz.csproj",
       "projectName": "ReparacionAutomotriz",
-      "projectPath": "/home/skylab-149/Desktop/AutoWorkShop/ReparacionAutomotriz.csproj",
-      "packagesPath": "/home/skylab-149/.nuget/packages/",
-      "outputPath": "/home/skylab-149/Desktop/AutoWorkShop/obj/",
+      "projectPath": "C:\\Users\\Anderson Cespedes\\Documents\\AutoWorkShop\\ReparacionAutomotriz.csproj",
+      "packagesPath": "C:\\Users\\Anderson Cespedes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anderson Cespedes\\Documents\\AutoWorkShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/skylab-149/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Anderson Cespedes\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

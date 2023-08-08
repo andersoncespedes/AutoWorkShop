@@ -5,7 +5,7 @@ public class Programa{
         List<Clientes> clientesLista = new();
         List<Vehiculos> vehiculosLista = new();
         List<Empleados> empleadosLista = new();
-
+        List<OrdenDeServicio> OrdenesLista = new();
         int opcion = 0;
         MainMenu mainMenu = new();
         do{
@@ -44,7 +44,7 @@ public class Programa{
                         switch(opcionOrden){
                             case 1:
                                 OrdenDeServicio ordenDeServicio = new();
-                                ordenDeServicio.GenerarOrden(clientesLista, vehiculosLista, empleadosLista);
+                                ordenDeServicio.GenerarOrden(clientesLista, vehiculosLista, empleadosLista, OrdenesLista);
                                 break;
                         }
                     }while(opcionOrden != 3);

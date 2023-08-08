@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -96,10 +97,23 @@ public class Vehiculos
             Console.ReadLine();
         }
     }
-    public void CarrosById(int id, List<Vehiculos> lista){
+    public List<Vehiculos> CarrosByIdCliente(int id, List<Vehiculos> lista){
         List<Vehiculos> vehiculos= lista.Where(x => x.idCliente == id).ToList();
         foreach(Vehiculos vehiculo in vehiculos){
             Console.WriteLine($"{vehiculo.placa}\t{vehiculo.modelo}\t{vehiculo.color}\t{vehiculo.km}");
         }
+        return vehiculos;
+    }
+    public Vehiculos GetCarroByPlaca(string placa, List<Vehiculos> vehiculos){
+        try{
+            Vehiculos encontrado = vehiculos.Find(e => e.placa.Equals(placa));
+            return encontrado;
+        }catch(Exception err){
+            Console.WriteLine(err.Message);
+        }
+        return null;
+    }
+    public void MostrarCarro(Vehiculos vehiculo){
+
     }
 }
