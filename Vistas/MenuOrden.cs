@@ -9,9 +9,10 @@ public class MenuOrden
     public int Menu()
     {
         Console.WriteLine("\tMenu");
-        Console.WriteLine("1. Orden de Aprobacion");
-        Console.WriteLine("2. Facturacion");
-        Console.WriteLine("3. Salir");
+        Console.WriteLine("1. Orden de Servicio");
+        Console.WriteLine("2. Orden de Aprobacion");
+        Console.WriteLine("3. Facturacion");
+        Console.WriteLine("4. Salir");
         Console.Write("Digite Una Opcion -> ");
         return int.Parse(Console.ReadLine());
     }

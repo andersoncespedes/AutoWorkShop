@@ -78,6 +78,10 @@ public class Clientes : Persona
             Console.WriteLine($"{cliente.cc}\t{cliente.nombre}\t{cliente.apellido}\t{cliente.telefono}\t{cliente.email}\t{cliente.fechaRegistro}");
         }
     }
+    public Clientes Encontrar(OrdenDeServicio cliente, List<Clientes> lista){
+        Clientes clienteEncontrado = lista.Find(e=> e.cc == cliente.IdCliente);
+        return clienteEncontrado;
+    }
     public bool Validar(List<Clientes> lista, int valor){
         return lista.Exists(e => e.cc == valor);
     }

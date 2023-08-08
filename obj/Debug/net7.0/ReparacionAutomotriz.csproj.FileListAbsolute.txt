@@ -28,18 +28,18 @@
 /home/skylab-149/Desktop/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.pdb
 /home/skylab-149/Desktop/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.genruntimeconfig.cache
 /home/skylab-149/Desktop/AutoWorkShop/obj/Debug/net7.0/ref/ReparacionAutomotriz.dll
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\bin\Debug\net7.0\ReparacionAutomotriz.exe
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\bin\Debug\net7.0\ReparacionAutomotriz.deps.json
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\bin\Debug\net7.0\ReparacionAutomotriz.runtimeconfig.json
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\bin\Debug\net7.0\ReparacionAutomotriz.dll
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\bin\Debug\net7.0\ReparacionAutomotriz.pdb
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.csproj.AssemblyReference.cache
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.AssemblyInfoInputs.cache
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.AssemblyInfo.cs
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.csproj.CoreCompileInputs.cache
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.dll
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\refint\ReparacionAutomotriz.dll
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.pdb
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ReparacionAutomotriz.genruntimeconfig.cache
-C:\Users\Anderson Cespedes\Documents\AutoWorkShop\obj\Debug\net7.0\ref\ReparacionAutomotriz.dll
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/bin/Debug/net7.0/ReparacionAutomotriz.exe
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/bin/Debug/net7.0/ReparacionAutomotriz.deps.json
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/bin/Debug/net7.0/ReparacionAutomotriz.runtimeconfig.json
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/bin/Debug/net7.0/ReparacionAutomotriz.dll
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/bin/Debug/net7.0/ReparacionAutomotriz.pdb
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.csproj.AssemblyReference.cache
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.AssemblyInfoInputs.cache
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.AssemblyInfo.cs
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.csproj.CoreCompileInputs.cache
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.dll
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/refint/ReparacionAutomotriz.dll
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.pdb
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ReparacionAutomotriz.genruntimeconfig.cache
+C:/Users/Anderson Cespedes/Documents/AutoWorkShop/obj/Debug/net7.0/ref/ReparacionAutomotriz.dll
