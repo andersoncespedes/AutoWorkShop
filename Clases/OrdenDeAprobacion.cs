@@ -49,6 +49,7 @@ namespace ReparacionAutomotriz.Clases;
             List<Aprobacion> aprobados = GuardarAprobaciones() ?? throw new Exception("Hubo un error al registrar");
             OrdenDeAprobacion ordenDeAprobacion = new(0, DateTime.Now, idEmpleado,NroOrden, aprobados);
             ordenDeAprobaciones.Add(ordenDeAprobacion);
+            GenerarVista(ordenDeAprobacion, aprobados);
             Console.Write("PRESIONE ENTER PARA CONTINUAR -> ");
             Console.ReadLine();
         }catch(Exception err){
@@ -75,10 +76,34 @@ namespace ReparacionAutomotriz.Clases;
                 char estado = Console.ReadLine() == "A" ? 'A' : 'R';
                 Aprobacion aprobacion = new(item, repuesto,VUnit, cantidad,total, estado);
                 aprobaciones.Add(aprobacion);
+                Console.Write("DESEA SEGUIR AGREGANDO ITEMS (S/N) -> ");
+                flag = Console.ReadLine() == "S";
             }
             return aprobaciones;
         }catch(Exception){
             return null;
+        }
+    }
+    public void GenerarVista(OrdenDeAprobacion orden, List<Aprobacion> lista){
+        try{
+            Console.Clear();
+            Console.WriteLine("=============================================");
+            Console.WriteLine($"|Nro Orden: {orden.NroOrden}");
+            Console.WriteLine($"|Fecha: {orden.Fecha}");
+            Console.WriteLine($"|Id Empleado: {orden.IdEmpleado}");
+            Console.WriteLine("==============================================");
+            Console.WriteLine("           DETALLES DE LA APROBACION          ");
+            Console.WriteLine("==============================================");
+            Console.WriteLine("ITEM   REPUESTO  UNIT   CANT   V TOTAL  ESTADO");
+            Console.WriteLine("==============================================");
+            foreach(Aprobacion a in lista){
+                Console.WriteLine($"{a.Item}  {a.Repuesto}  {a.VUnit}  {a.Cant}  {a.Total}  {a.Estado}");
+            }
+            Console.Write("PRESIONE ENTER PARA CONTINUAR -> ");
+            Console.ReadLine();
+        }catch(Exception){
+            Console.Write("PRESIONE ENTER PARA CONTINUAR -> ");
+            Console.ReadLine();
         }
     }
     }
