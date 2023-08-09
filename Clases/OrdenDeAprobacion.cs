@@ -7,12 +7,17 @@ namespace ReparacionAutomotriz.Clases;
     public class Aprobacion {
         public string Item {get; set;}
         public string Repuesto {get; set;}
-        public int VUnit {get; set;}
+        public double VUnit {get; set;}
         public int Cant {get; set;}
         public int Total {get; set;}
         public char Estado {get; set;}
         public Aprobacion(string item, string repuesto, int vUnit, int Cant, int Total, char Estado) {
-        
+            this.Item = item;
+            this.Repuesto = repuesto;
+            this.VUnit = vUnit;
+            this.Cant = Cant;
+            this.Total = Total;
+            this.Estado = Estado;
         }
     }
     public class OrdenDeAprobacion
@@ -38,20 +43,24 @@ namespace ReparacionAutomotriz.Clases;
         {
             OrdenDeServicio ordenDeServicio = new();
             Empleados empleado = new();
+
             ordenDeServicio.Mostrar(ordenDeServicios);
             Console.Write("Digite el Numero de Orden -> ");
+
             int NumeroOrden = int.Parse(Console.ReadLine());
             OrdenDeServicio ordenDeServicioSeleccionada = ordenDeServicio.Encontrar(ordenDeServicios, NumeroOrden) ?? throw new Exception("No se Encontro la orden de servicio");
+           
             empleado.Mostrar(empleados);
             Console.Write("Digite la cedula del empleado -> ");
+            
             int idEmpleado = int.Parse(Console.ReadLine());
             Empleados empleados1 = empleado.BuscarEmpleado(empleados, idEmpleado) ?? throw new Exception("No se encontro el empleado");
+            
             List<Aprobacion> aprobados = GuardarAprobaciones() ?? throw new Exception("Hubo un error al registrar");
-            OrdenDeAprobacion ordenDeAprobacion = new(0, DateTime.Now, idEmpleado,NroOrden, aprobados);
+            int id = GenerarId(ordenDeAprobaciones);
+            OrdenDeAprobacion ordenDeAprobacion = new(id, DateTime.Now, idEmpleado,NroOrden, aprobados);
             ordenDeAprobaciones.Add(ordenDeAprobacion);
             GenerarVista(ordenDeAprobacion, aprobados);
-            Console.Write("PRESIONE ENTER PARA CONTINUAR -> ");
-            Console.ReadLine();
         }catch(Exception err){
             Console.WriteLine(err.Message);
             Console.Write("PRESIONE ENTER PARA CONTINUAR -> ");
@@ -84,10 +93,18 @@ namespace ReparacionAutomotriz.Clases;
             return null;
         }
     }
+     public int GenerarId(List<OrdenDeAprobacion> listaOrden){
+        try{
+            int longitud = listaOrden.ToArray().Length;
+            return listaOrden[longitud - 1].NroOrden + 1;
+        }catch(Exception){
+            return 0;
+        }
+    }
     public void GenerarVista(OrdenDeAprobacion orden, List<Aprobacion> lista){
         try{
             Console.Clear();
-            Console.WriteLine("=============================================");
+            Console.WriteLine("==============================================");
             Console.WriteLine($"|Nro Orden: {orden.NroOrden}");
             Console.WriteLine($"|Fecha: {orden.Fecha}");
             Console.WriteLine($"|Id Empleado: {orden.IdEmpleado}");

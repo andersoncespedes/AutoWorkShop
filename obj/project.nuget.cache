@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BTy2iT1Va8HGzzTaB3/gSZCQ3gBgCGZfD5oXbQZ0i0pOJsagm+u+pT3hJoS5GQKbiDIPd/spZix3FzGV84ze+A==",
+  "dgSpecHash": "benEfEwRYAnD3ZJ2REF+YAcp9EqR2JdEhbBeiCW/SwCBSvbHAX6GtA9ajZR07AK6oXerAmHiPyII5Igc5OgVQA==",
   "success": true,
-  "projectFilePath": "/home/skylab-149/Desktop/AutoWorkShop/ReparacionAutomotriz.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\janus\\Desktop\\AutoWorkShop\\ReparacionAutomotriz.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\janus\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
