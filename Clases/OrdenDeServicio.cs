@@ -137,7 +137,7 @@ public class OrdenDeServicio
         try{    
             OrdenDeServicio encontrado = lista.Find(e => e.NrOrden == Nro);
             return encontrado;
-        }catch(Exception errr){
+        }catch(Exception){
             Console.WriteLine("NO SE PUDO ENCONTRAR LA ORDEN DE SERVICIO");
             Console.Write("PRESIONE ENTER PARA CONTINUAR -> ");
             Console.ReadLine();

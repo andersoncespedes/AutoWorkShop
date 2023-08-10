@@ -33,7 +33,7 @@ namespace ReparacionAutomotriz.Clases;
             string especialidad = Console.ReadLine();
             Empleados empleados= new(cc, nombre, telefono, especialidad);
             lista.Add(empleados);
-        }catch(Exception err){
+        }catch(Exception){
             Console.WriteLine("Has Ingresado un dato invalido");
             Console.Write("Presiona enter para continuar -> ");
             Console.ReadLine();
